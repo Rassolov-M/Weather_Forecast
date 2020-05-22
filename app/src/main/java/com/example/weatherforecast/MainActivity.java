@@ -17,10 +17,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String instanceState;
-        if (savedInstanceState == null) {
-            instanceState = "Первый запуск!";
-        } else {
+        String instanceState = "Первый запуск!";
+        if (savedInstanceState != null) {
             instanceState = "Повторный запуск!";
         }
         Toast.makeText(getApplicationContext(), instanceState + " - onCreate()", Toast.LENGTH_LONG).show();
@@ -43,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Повторный запуск!! - onRestoreInstanceState()", Toast.LENGTH_SHORT).show();
     }
 
-    
+
     @Override
     protected void onResume() {
         super.onResume();

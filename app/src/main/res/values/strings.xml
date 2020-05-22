@@ -10,6 +10,7 @@
     <string name="wind_speed">скорость ветра</string>
     <string name="pressure">давление</string>
     <string name="tool_bar_menu">Меню</string>
+    <string name="enter_the_city">укажите город</string>
     <string-array name="city">
         <item>Архангельск</item>
         <item>Ярославль</item>
