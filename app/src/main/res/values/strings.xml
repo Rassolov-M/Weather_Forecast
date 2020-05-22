@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Weather Forecast</string>
+    <string name="current_date_and_time">дата и время</string>
+    <string name="now">сейчас</string>
+    <string name="_hour_one">+1ч</string>
+    <string name="hour_two">+2ч</string>
+    <string name="hour_three">+3ч</string>
+    <string name="hour_four">+4ч</string>
+    <string name="hour_five">+5ч</string>
+    <string name="wind_speed">скорость ветра</string>
+    <string name="pressure">давление</string>
+    <string name="tool_bar_menu">Меню</string>
+    <string-array name="city">
+        <item>Архангельск</item>
+        <item>Ярославль</item>
+        <item>Воронеж</item>
+        <item>Москва</item>
+        <item>Курск</item>
+        <item>Мурманск</item>
+    </string-array>
 </resources>
