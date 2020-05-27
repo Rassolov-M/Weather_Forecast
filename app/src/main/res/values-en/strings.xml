@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather Forecast</string>
+    <string name="current_date">15.05.20</string>
+    <string name="now">now</string>
+    <string name="_hour_one">+1h</string>
+    <string name="hour_two">+2h</string>
+    <string name="hour_three">+3h</string>
+    <string name="hour_four">+4h</string>
+    <string name="hour_five">+5h</string>
+    <string name="wind_speed">wind_speed</string>
+    <string name="pressure">pressure</string>
+    <string name="tool_bar_menu">menu</string>
+    <string name="enter_the_city">enter the city</string>
+    <string name="temperature">+C</string>
+    <string name="current_time">22:30</string>
+    <string-array name="city">
+        <item>Arkhangelsk</item>
+        <item>Yaroslavl</item>
+        <item>Voronezh</item>
+        <item>Moscow</item>
+        <item>Kursk</item>
+        <item>Murmansk</item>
+    </string-array>
+</resources>

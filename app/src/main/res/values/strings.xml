@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Weather Forecast</string>
-    <string name="current_date_and_time">дата и время</string>
+    <string name="current_date">15.05.20</string>
     <string name="now">сейчас</string>
     <string name="_hour_one">+1ч</string>
     <string name="hour_two">+2ч</string>
@@ -10,13 +10,16 @@
     <string name="wind_speed">скорость ветра</string>
     <string name="pressure">давление</string>
     <string name="tool_bar_menu">Меню</string>
-    <string name="enter_the_city">укажите город</string>
+    <string name="enter_the_city">выберите город</string>
+    <string name="temperature">+C</string>
+    <string name="current_time">22:30</string>
     <string-array name="city">
         <item>Архангельск</item>
         <item>Ярославль</item>
         <item>Воронеж</item>
         <item>Москва</item>
         <item>Курск</item>
-        <item>Мурманск</item>
+        <item>Мурманс
+        </item>
     </string-array>
 </resources>

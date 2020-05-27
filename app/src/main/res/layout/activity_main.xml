@@ -6,29 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     tools:ignore="MissingConstraints"
-    android:visibility="visible">
+    android:visibility="visible"
+    android:background="@color/colorLayoutFon">
 
     <TextView
-        android:id="@+id/textViewCurrentDateAndTime"
+        android:id="@+id/textViewCurrentDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/current_date_and_time"
+        android:paddingEnd="5dp"
+        android:paddingStart="3dp"
+        android:text="@string/current_date"
         android:textSize="25sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCurrentTime"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/current_time"
+        android:textSize="25sp"
+        android:paddingStart="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </TextView>
 
     <HorizontalScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCurrentDateAndTime">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <TableRow
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center">
 
@@ -36,7 +51,7 @@
                 android:id="@+id/BtnCurrentTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/now"/>
+                android:text="@string/now" />
 
 
             <Button
@@ -72,5 +87,17 @@
         </TableRow>
 
     </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="@string/temperature"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCurrentTime" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

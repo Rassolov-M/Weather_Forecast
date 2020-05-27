@@ -17,10 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<!--        <activity-->
-<!--            android:name=".myapplication.SecondActivity"-->
-<!--            android:label="Second">-->
-<!--        </activity>-->
+        <activity
+            android:name=".myapplication.SecondActivity"
+            android:label="Second"
+            android:theme="@style/startApp">
+
+        </activity>
     </application>
 
 </manifest>
