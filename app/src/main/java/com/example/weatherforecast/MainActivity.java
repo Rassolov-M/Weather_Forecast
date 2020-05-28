@@ -5,10 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.weatherforecast.myapplication.SecondActivity;
+import com.example.weatherforecast.myapplication.WeatherActivity;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -22,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView textViewCurrentDate;
     private TextView getTextViewCurrentTime;
+    private Button discoveryBtnWeather;
     private static Logger log = Logger.getLogger(MainActivity.class.getName());
 
     @Override
@@ -35,24 +39,29 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), instanceState + " - onCreate()", Toast.LENGTH_LONG).show();
         try {
             log.info("onCreate()");
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
-
-        initViews();
         currentDate();
         currentTime();
+        setOnBtnClickDiscoveryWeather();
     }
 
-    @SuppressLint("ResourceType")
-    private void initViews() {
-        textViewCurrentDate = findViewById(R.id.textViewCurrentDate);
-        getTextViewCurrentTime = findViewById(R.id.textViewCurrentTime);
+    private void setOnBtnClickDiscoveryWeather() {
+        discoveryBtnWeather = findViewById(R.id.DiscoveryBtnWeather);
+        discoveryBtnWeather.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
     private void currentDate() {
+        textViewCurrentDate = findViewById(R.id.textViewCurrentDate);
         SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy");
         textViewCurrentDate.setText(format.format(new Date()));
 
@@ -62,15 +71,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void currentTime() {
+        getTextViewCurrentTime = findViewById(R.id.textViewCurrentTime);
         Date currentDate = new Date();
         DateFormat timeFormat = new SimpleDateFormat("HH:mm", Locale.getDefault());
         String timeText = timeFormat.format(currentDate);
         getTextViewCurrentTime.setText(timeText);
-    }
-
-    public void Click() {
-        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-        startActivity(intent);
     }
 
     protected void onStart() {
@@ -78,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "onStart()", Toast.LENGTH_SHORT).show();
         try {
             log.info("onStart()");
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -89,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Повторный запуск!! - onRestoreInstanceState()", Toast.LENGTH_SHORT).show();
         try {
             log.info("Повторный запуск!! - onRestoreInstanceState()");
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -101,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "onResume()", Toast.LENGTH_SHORT).show();
         try {
             log.info("onResume()");
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -112,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "onPause()", Toast.LENGTH_SHORT).show();
         try {
             log.info("onPause()");
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -123,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "onSaveInstanceState()", Toast.LENGTH_SHORT).show();
         try {
             log.info("onSaveInstanceState()");
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -134,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "onStop()", Toast.LENGTH_SHORT).show();
         try {
             log.info("onStop()");
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -145,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "onRestart()", Toast.LENGTH_SHORT).show();
         try {
             log.info("onRestart()");
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -156,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "onDestroy()", Toast.LENGTH_SHORT).show();
         try {
             log.info("onDestroy()");
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

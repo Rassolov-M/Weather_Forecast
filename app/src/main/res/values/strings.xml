@@ -10,16 +10,18 @@
     <string name="wind_speed">скорость ветра</string>
     <string name="pressure">давление</string>
     <string name="tool_bar_menu">Меню</string>
-    <string name="enter_the_city">выберите город</string>
-    <string name="temperature">+C</string>
+    <string name="enter_the_city">введите город</string>
+    <string name="temperature">0</string>
     <string name="current_time">22:30</string>
+    <string name="find_out_the_weather">Узнать погоду</string>
+    <string name="defaultUrl">https://yandex.ru/pogoda/213</string>
+    <string name="go">go</string>
     <string-array name="city">
         <item>Архангельск</item>
         <item>Ярославль</item>
         <item>Воронеж</item>
         <item>Москва</item>
         <item>Курск</item>
-        <item>Мурманс
-        </item>
+        <item>Мурманск</item>
     </string-array>
 </resources>
