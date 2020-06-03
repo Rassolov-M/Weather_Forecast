@@ -27,6 +27,7 @@ public class WeatherActivity extends AppCompatActivity {
         setOnClickBtnOneHour();
         setOnClickBtnTwoHour();
         setOnClickBtnOpenOnBrowser();
+
     }
 
 

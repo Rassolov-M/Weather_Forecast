@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Weather Forecast</string>
     <string name="current_date">15.05.20</string>
     <string name="now">сейчас</string>
@@ -10,18 +10,12 @@
     <string name="wind_speed">скорость ветра</string>
     <string name="pressure">давление</string>
     <string name="tool_bar_menu">Меню</string>
-    <string name="enter_the_city">введите город</string>
+    <string name="enter_the_city">Выберите город</string>
     <string name="temperature">0</string>
     <string name="current_time">22:30</string>
-    <string name="find_out_the_weather">Узнать погоду</string>
-    <string name="defaultUrl">https://yandex.ru/pogoda/213</string>
-    <string name="go">go</string>
-    <string-array name="city">
-        <item>Архангельск</item>
-        <item>Ярославль</item>
-        <item>Воронеж</item>
-        <item>Москва</item>
-        <item>Курск</item>
-        <item>Мурманск</item>
-    </string-array>
+    <string name="find_out_the_weather" translatable="false">Узнать погоду</string>
+    <string name="defaultUrl" translatable="false">https://yandex.ru/pogoda/213</string>
+    <string name="go" translatable="false">go</string>
+    <string name="discovery_btn_weather">Посмотреть погоду</string>
+    <string name="empty_list" tools:ignore="MissingTranslation">Empty list</string>
 </resources>

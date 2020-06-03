@@ -14,12 +14,4 @@
     <string name="enter_the_city">enter the city</string>
     <string name="temperature">+C</string>
     <string name="current_time">22:30</string>
-    <string-array name="city">
-        <item>Arkhangelsk</item>
-        <item>Yaroslavl</item>
-        <item>Voronezh</item>
-        <item>Moscow</item>
-        <item>Kursk</item>
-        <item>Murmansk</item>
-    </string-array>
 </resources>
